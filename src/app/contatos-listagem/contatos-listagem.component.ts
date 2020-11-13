@@ -22,7 +22,7 @@ export class ContatosListagemComponent implements OnInit {
   }
 
   listar(){
-    this.contatoService.listar().subscribe(dados  => this.contatos = dados.Instance );
+    this.contatoService.listar().subscribe(dados  => this.contatos = dados['Instance'] );
     
   }
 
